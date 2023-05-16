@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+}
+
+.clip-path {
+  clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 50%);
+}
+
+.star {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  box-shadow: 0 0 5px 1px white;
+  top: 0%;
+}
