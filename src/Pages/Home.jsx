@@ -1,4 +1,4 @@
-import React from "react";
+import NotesComponent from "../Components/NotesComponent";
 
 function text() {
   return (
@@ -14,22 +14,16 @@ function text() {
 function Home() {
   return (
     <>
-      <div className=" p-10 bg-transparent bg-gradient-to-bl from-cyan-900 from-30% via-cyan-950 via-70% to-gray-950 to-90%">
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
-        <div className="max-w-3xl p-2">{text()}</div>
+      <div className=" flex p-10 bg-transparent bg-gradient-to-r from-cyan-950 to-cyan-900">
+        <div className="mt-20 mb-60 border border-dotted border-x-2 border-gray-500 my-4"></div>
+        <div className="rounded-xl py-10 pr-10">
+          <NotesComponent />
+          <NotesComponent />
+          <NotesComponent />
+          <NotesComponent />
+          <NotesComponent />
+        </div>
       </div>
-
-      <div className="stars"></div>
-      <div className="twinkleMask"></div>
-      <div className="twinkleMask2"></div>
     </>
   );
 }

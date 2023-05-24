@@ -6,9 +6,9 @@ import SingUp from "../Pages/SingUp";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Browse", href: "/browse" },
-  { name: "Updates", href: "/updates" },
-  { name: "Pricing", href: "/pricing" },
+  { name: "Browse", href: "" },
+  { name: "Updates", href: "" },
+  { name: "Pricing", href: "" },
 ];
 
 function MainBody({ children }) {
@@ -52,10 +52,10 @@ function MainBody({ children }) {
                               to={item.href}
                               className={({ isActive }) => {
                                 return (
-                                  " px-3 text-lg font-medium" +
+                                  " px-3 text-lg font-medium " +
                                   (!isActive
-                                    ? " after:content-[' '] after:bg-black after:m-auto  after:w-0 after:h-[2px] after:ease-in after:duration-300 after:hover:w-full cursor-pointer"
-                                    : "cursor-pointer border-b-2 border-black")
+                                    ? " text-gray-300"
+                                    : " text-gray-300")
                                 );
                               }}
                               aria-current={item.current ? "page" : undefined}

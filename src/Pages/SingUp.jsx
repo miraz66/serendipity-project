@@ -10,7 +10,7 @@ function SingUp() {
     <div>
       <button
         onClick={handleSingUp}
-        className="bg-white px-5 py-1 rounded-md text-gray-100 bg-gradient-to-bl from-violet-500 to-yellow-500"
+        className="bg-white bg-transparent px-5 py-1 rounded-md text-gray-100 bg-gradient-to-bl from-violet-500 to-yellow-500"
       >
         SingUp
       </button>
